@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57E98845-5FD8-4321-A348-86D0F44149C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>yunkeInventario</RootNamespace>
+    <AssemblyName>yunkeInventario</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Users\perso\Desktop\Esc\Inventario\Inventario\bin\Release\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente.Designer.cs">
+      <DependentUpon>cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conexion.cs" />
+    <Compile Include="DataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataView.Designer.cs">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto.Designer.cs">
+      <DependentUpon>Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo.Designer.cs">
+      <DependentUpon>Tipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nav.Designer.cs">
+      <DependentUpon>Nav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavReg.Designer.cs">
+      <DependentUpon>NavReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cliente.resx">
+      <DependentUpon>cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataView.resx">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nav.resx">
+      <DependentUpon>Nav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavReg.resx">
+      <DependentUpon>NavReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto.resx">
+      <DependentUpon>Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Tipo.resx">
+      <DependentUpon>Tipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MINI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon cerrar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss_man-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiora.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon minimizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MINI1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prodcutos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon cerrar21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-Menu-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autosave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customizability.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\custom_solutions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\community.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\community_based_content.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon maximizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MINI2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple_interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon maximizar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subscription.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
