@@ -96,5 +96,23 @@ namespace yunkeInventario
         {
 
         }
+
+        private void tableLayoutPanel3_MouseHover(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (tableLayoutPanel3.Width == 193)
+            tableLayoutPanel3.Width = 40;
+            else
+                tableLayoutPanel3.Width = 193;
+        }
+
+        private void Container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

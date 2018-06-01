@@ -266,5 +266,8 @@
   <ItemGroup>
     <None Include="Resources\subscription.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layered_content.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
