@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BarcodeLib, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f09bda868cc39e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.1.3.0.0\lib\net20\BarcodeLib.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data">
@@ -50,81 +53,142 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cliente.cs">
+    <Compile Include="Form\Navegadores4\NavMort.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cliente.Designer.cs">
+    <Compile Include="Form\Navegadores4\NavMort.Designer.cs">
+      <DependentUpon>NavMort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Navegadores4\su.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Navegadores4\su.Designer.cs">
+      <DependentUpon>su.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\clienteRegistrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\clienteRegistrado.Designer.cs">
+      <DependentUpon>clienteRegistrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\cliente.Designer.cs">
       <DependentUpon>cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="conexion.cs" />
-    <Compile Include="DataView.cs">
+    <Compile Include="Clases\codigosBarras.cs" />
+    <Compile Include="Form\codigosBarrasF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataView.Designer.cs">
+    <Compile Include="Form\codigosBarrasF.Designer.cs">
+      <DependentUpon>codigosBarrasF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Form\DataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DataView.Designer.cs">
       <DependentUpon>DataView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto.cs">
+    <Compile Include="Form\Producto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto.Designer.cs">
+    <Compile Include="Form\Producto.Designer.cs">
       <DependentUpon>Producto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tipo.cs">
+    <Compile Include="Form\Tipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tipo.Designer.cs">
+    <Compile Include="Form\Tipo.Designer.cs">
       <DependentUpon>Tipo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nav.cs">
+    <Compile Include="Form\Navegadores4\Nav.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nav.Designer.cs">
+    <Compile Include="Form\Navegadores4\Nav.Designer.cs">
       <DependentUpon>Nav.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Form\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Form\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="NavReg.cs">
+    <Compile Include="Form\NavReg.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NavReg.Designer.cs">
+    <Compile Include="Form\NavReg.Designer.cs">
       <DependentUpon>NavReg.cs</DependentUpon>
     </Compile>
-    <Compile Include="program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuario.cs" />
-    <Compile Include="Usuarios.cs">
+    <Compile Include="Clases\program.cs" />
+    <Compile Include="Form\msg.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios.Designer.cs">
+    <Compile Include="Form\msg.Designer.cs">
+      <DependentUpon>msg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagos.Designer.cs">
+      <DependentUpon>pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Form\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="cliente.resx">
+    <Compile Include="Form\venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\venta.Designer.cs">
+      <DependentUpon>venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\reportes.Designer.cs">
+      <DependentUpon>reportes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\Navegadores4\NavMort.resx">
+      <DependentUpon>NavMort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Navegadores4\su.resx">
+      <DependentUpon>su.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\clienteRegistrado.resx">
+      <DependentUpon>clienteRegistrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\cliente.resx">
       <DependentUpon>cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataView.resx">
+    <EmbeddedResource Include="Form\codigosBarrasF.resx">
+      <DependentUpon>codigosBarrasF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DataView.resx">
       <DependentUpon>DataView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nav.resx">
+    <EmbeddedResource Include="Form\Navegadores4\Nav.resx">
       <DependentUpon>Nav.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NavReg.resx">
+    <EmbeddedResource Include="Form\NavReg.resx">
       <DependentUpon>NavReg.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto.resx">
+    <EmbeddedResource Include="Form\Producto.resx">
       <DependentUpon>Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\msg.resx">
+      <DependentUpon>msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagos.resx">
+      <DependentUpon>pagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,15 +200,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Tipo.resx">
+    <EmbeddedResource Include="Form\Tipo.resx">
       <DependentUpon>Tipo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios.resx">
+    <EmbeddedResource Include="Form\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\venta.resx">
+      <DependentUpon>venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\reportes.resx">
+      <DependentUpon>reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Notocar\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -156,7 +224,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Notocar\App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MINI.png" />
@@ -268,6 +336,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\layered_content.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_warning_alert_attention-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
